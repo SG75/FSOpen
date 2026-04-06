@@ -1,0 +1,12 @@
+sequenceDiagram
+    Client's Browser->>+Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note 
+    Server ->>+ Client's Browser: Status Code 302, GET to Location /exampleapp/notes
+    Client's Browser ->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    Client's Browser ->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    Server ->>+ Client's Browser:Status Code 200, main.css
+    Client's Browser ->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    Server ->>+ Client's Browser:Status Code 200, main.js
+    Client's Browser ->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    Server ->>+ Client's Browser:Status Code 200, data.json
+
+https://mermaid.ai/play?utm_source=mermaid_live_editor&utm_medium=share#pako:eNq1k89PwjAUx_-V5l08OLeyjf3ogYNovGg0gZNZYprtAQXWzrYTlPC_WyAYiB6UYE99ab-f98lL3gpKVSEwMPjaoizxRvCx5nUhiTv9uUBpLwy51mphUF_1epcD1G-oGXl6HAzJxNrGsCAwtq0EGr80_gTnRsiZ8EciwCWvmznypgkkLl6kskh25B2FbIDfujAysNy2hvSdGolo6JG72yGxityrkluhJDkiO6r52ZccCm8Yf_D9F2rNhXTP5hdDOJxBSKlHjrPnlpqe7jQ9v1LFLXdcJU-ROggXEjwYa1EBs7pFD2rUztmVsNqgC7ATrLEA5q4V17MCCrl2mYbLZ6XqfUyrdjwBNuJz46q2cS32m_L1BWWFuq9aaYHlNNsygK1gCSwKYz9PsjCO8yykIc09eAfWjfwkoTTpZFmaZnGSrz342DalfpaEcZ5mSdLpRmkn9QArYZV-2C3rdmfXn8zdPLc

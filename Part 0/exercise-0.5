@@ -1,0 +1,13 @@
+sequenceDiagram
+    Client's Browser->>+Server: POST https://studies.cs.helsinki.fi/exampleapp/spa
+    Server ->>+ Client's Browser: Status Code 200
+    Client's Browser ->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    Server ->>+ Client's Browser:Status Code 200, main.css
+    Client's Browser ->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+    Server ->>+ Client's Browser:Status Code 200, spa.js
+    Client's Browser ->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    Server ->>+ Client's Browser:Status Code 200, data.json
+
+https://mermaid.ai/play?utm_source=mermaid_live_editor&utm_medium=share#pako:eNqtk7tOwzAUhl_FOgsDIfc6iYcOFMSEQCoTymI1p41pYgfbgULVd8dtVFQuA1T15Iu-_3w68lnDTFUIDAw-9yhneCX4QvO2lMStSSNQ2jNDLrV6NagvxuPzKeoX1Izc300fSG1tZ1gQGNtXAo0_M36NjRFyKfy5CHDF265B3nWB6fiQOfBkG_Ujn5Gp5bY3ZOKkSByGv2uQQ4-b6_9otFxI92z-4PJNxSNf2RNKud74T0cpHZInFKq43eYqeYzTAVxK8GChRQXM6h49aFG7LrojrLfRJdgaWyyBuW3F9bKEUm4c03H5qFS7x7TqFzWwOW-MO_WdK7H_qJ-3GmWFeqJ6aYFFUUJ3KcDWsAKWxKlf0DxO0yKPwzgsPHgDNkp8SsOQRnmeZXlKi40H77uyoZ_TOC2ynNJolGRR5gFWwip9O0zLbmg2H83BD74
+
+

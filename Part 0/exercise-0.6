@@ -1,0 +1,5 @@
+sequenceDiagram
+    Client's Browser->>+Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    Server ->>+ Client's Browser: Status Code 201 Created
+    Client's Browser ->>+Client's Browser: spa.js has preventDefault() hence not submitting the a new GET request
+    Client's Browser ->>+ Client's Browser: spa.js updated the page with payload content: "hola amigo" date : "2026-04-06T06:57:30.151Z"
