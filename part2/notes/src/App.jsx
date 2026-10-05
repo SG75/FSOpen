@@ -1,11 +1,35 @@
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+import axios from "axios";
 import Note from "./components/Note";
 
-const App = (props) => {
-  const [notes, setNotes] = useState(props.notes);
+// const promise = axios.get("http://localhost:3001/notes").then((response) => {
+//   const notes = response.data;
+//   console.log(notes);
+// });
+
+// const promise2 = axios.get("http://localhost:3001/foobar");
+// console.log(promise2);
+// promise2.then((response) => {
+//   console.log(response);
+// });
+
+const App = () => {
+  const [notes, setNotes] = useState([]);
   const [newNote, setNewNote] = useState("");
   const [showAll, setShowAll] = useState(true);
+
+  useEffect(() => {
+    console.log("effect"); //this is not printed when the
+    //notes state is updated and the component is  rendered because of the empty array []
+    //aka dependency array or just dependincies
+    //this can be confirmed by removing the dependency array and checking the console
+    axios.get("http://localhost:3001/notes").then((response) => {
+      console.log("promise fulfilled");
+      setNotes(response.data);
+    });
+  }, []);
+
+  console.log("render", notes.length, "notes");
 
   const addNote = (e) => {
     e.preventDefault();
