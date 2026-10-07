@@ -8,12 +8,18 @@
     {
       "id": "2",
       "content": "Browser can execute only JavaScript",
-      "important": false
+      "important": true
     },
     {
       "id": "3",
       "content": "GET and POST are the most important methods of HTTP protocol",
-      "important": true
+      "important": false
+    },
+    {
+      "content": "I am learning JS",
+      "important": true,
+      "id": "QqsET7q01XE"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
