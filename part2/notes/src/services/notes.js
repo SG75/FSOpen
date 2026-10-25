@@ -18,6 +18,7 @@ const getAll = () => {
 
 const create = (newObject) => {
   const request = axios.post(baseUrl, newObject);
+  console.log("from axios put", request);
   return request.then((response) => response.data);
 };
 

@@ -1,6 +1,6 @@
 import Person from "./Person";
 
-export default function Persons({ persons, searchPerson }) {
+export default function Persons({ persons, searchPerson, onClick }) {
   const filteredPerson = persons.filter((person) =>
     person.name.toLocaleLowerCase().includes(searchPerson.toLowerCase()),
   );
@@ -10,7 +10,12 @@ export default function Persons({ persons, searchPerson }) {
       {filteredPerson.map((person) => {
         // console.log(person);
         return (
-          <Person key={person.name} name={person.name} number={person.number} />
+          <Person
+            key={person.name}
+            name={person.name}
+            number={person.number}
+            onClick={() => onClick(person.id)}
+          />
         );
       })}
     </>

@@ -17,8 +17,18 @@
     },
     {
       "content": "I am learning JS",
-      "important": true,
+      "important": false,
       "id": "QqsET7q01XE"
+    },
+    {
+      "content": "narayana",
+      "important": true,
+      "id": "vQwWmXRS-Uo"
+    },
+    {
+      "content": "narayana",
+      "important": false,
+      "id": "Wlsz_pVFcuw"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
