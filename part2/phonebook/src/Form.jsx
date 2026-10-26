@@ -1,10 +1,10 @@
-export default function Form({ 
-    addPerson,
-    newName,
-    handlePersonChange,
-    newNumber,
-    handleNumberChange,
- }) {
+export default function Form({
+  addPerson,
+  newName,
+  handlePersonChange,
+  newNumber,
+  handleNumberChange,
+}) {
   return (
     <>
       <form onSubmit={addPerson}>
@@ -16,7 +16,9 @@ export default function Form({
         </div>
 
         <div>
-          <button type="submit">add</button>
+          <button className="btn" type="submit">
+            add
+          </button>
         </div>
       </form>
     </>
